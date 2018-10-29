@@ -1,0 +1,83 @@
+{
+  "name": "<%= name %>",
+  "version": "1.0.0",
+  "description": "Framework7 Vue Webpack starter app template",
+  "scripts": {
+    "build-prod": "node ./build/prod.js",
+    "dev": "webpack-dev-server --config ./build/webpack.config.dev.js",
+    "prod": "webpack-dev-server --config ./build/webpack.config.prod.js",
+    "start": "npm run dev",
+    "copy-fonts": "cpy node_modules/framework7-icons/fonts/*.* src/fonts && cpy node_modules/material-design-icons/iconfont/*.{eot,ttf,woff,woff2} src/fonts",
+    "postinstall": "npm run copy-fonts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/framework7io/framework7-template-vue-webpack.git"
+  },
+  "keywords": [
+    "ios",
+    "webpack",
+    "framework7",
+    "vue",
+    "vuejs",
+    "material",
+    "mobile",
+    "app",
+    "f7"
+  ],
+  "author": "<%= author %>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/framework7io/framework7-template-vue-webpack/issues"
+  },
+  "homepage": "http://framework7.io/vue/",
+  "dependencies": {
+    "framework7": "^3.4.0",
+    "framework7-icons": "^0.9.1",
+    "framework7-vue": "^3.4.0",
+    "material-design-icons": "^3.0.1",
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-syntax-jsx": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "autoprefixer": "^9.1.5",
+    "babel-helper-vue-jsx-merge-props": "^2.0.3",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-transform-vue-jsx": "^4.0.1",
+    "chalk": "^2.4.1",
+    "copy-webpack-plugin": "^4.5.2",
+    "cpy-cli": "^2.0.0",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.4.3",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "ora": "^3.0.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "url-loader": "^1.1.1",
+    "vue-loader": "^15.4.2",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.20.0",
+    "webpack-bundle-analyzer": "^3.0.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

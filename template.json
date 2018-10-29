@@ -1,0 +1,6 @@
+{
+    "name": "f7-vue",
+    "description": "Framework7 Vue Webpack starter app template.",
+    "bash": ["yarn || npm install", "npm run dev", "npm run build"],
+    "readme": "https://github.com/workplus-templates/f7-vue#readme"
+}
