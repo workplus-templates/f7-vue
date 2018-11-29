@@ -5,7 +5,8 @@
 ## Dependencies
 
 * [Framework7](https://framework7.io/vue/)
-* VueJs
+* [@workplus/codash](https://github.com/WorkPlusFE/codash)
+* VueJs/Vuex
 * Webpack
 * Less
 * Babel

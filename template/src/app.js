@@ -1,6 +1,9 @@
 // Import Vue
 import Vue from 'vue';
 
+// Import store
+import store from './store';
+
 // Import F7
 import Framework7 from 'framework7/framework7.esm.bundle.js';
 
@@ -23,6 +26,7 @@ Framework7.use(Framework7Vue)
 // Init App
 new Vue({
   el: '#app',
+  store,
   template: '<app/>',
 
   // Register App Component
