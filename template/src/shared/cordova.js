@@ -1,3 +1,5 @@
+// https://github.com/WorkPlusFE/codash
+
 import { Cordova } from '@workplus/codash';
 
 const openMock = process.env.NODE_ENV === 'production' ? false : true;
